@@ -24,3 +24,22 @@ button {
 button:disabled {
   cursor: auto;
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 30;
+}
+.value {
+  display: flex;
+  font-size: 50;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
