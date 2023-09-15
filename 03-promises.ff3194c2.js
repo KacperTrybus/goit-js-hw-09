@@ -1,0 +1,2 @@
+function e(e,t){Math.random()>.3?console.log("fullfilled"):console.log("rejected")}const t=document.querySelector("input[name=delay]"),u=document.querySelector("input[name=step]"),o=document.querySelector("input[name=amount]");document.querySelector("button").addEventListener("click",(function(n){n.preventDefault();const l=Number(t.value),c=Number(u.value),r=Number(o.value);setTimeout(e,l),clearTimeout(e);for(let t=2;t<=r;t++)setTimeout(e,c)}));
+//# sourceMappingURL=03-promises.ff3194c2.js.map
