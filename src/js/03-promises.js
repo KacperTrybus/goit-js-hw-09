@@ -40,12 +40,11 @@ form.addEventListener('submit', function (event) {
 
   for (let i = 1; i <= amount; i++) {
     const currentDelay = firstDelayValue + (i - 1) * stepDelayValue; // zapisywanie delaya dla loga
-    createPromise(i, currentDelay).then(() => {
-      createdPromiseCount++; // zwiekszenie licznika wykonanych funkcji
+    createPromise(i, currentDelay);
+    createdPromiseCount++; // zwiekszenie licznika wykonanych funkcji
 
-      if (createdPromiseCount === amount) {
-        submitButton.removeAttribute('disabled');
-      }
-    });
+    if (createdPromiseCount === amount) {
+      btn.removeAttribute('disabled');
+    }
   }
 });
