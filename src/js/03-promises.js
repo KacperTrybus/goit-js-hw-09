@@ -39,7 +39,7 @@ form.addEventListener('submit', function (event) {
   let createdPromiseCount = 0;
 
   for (let i = 1; i <= amount; i++) {
-    const currentDelay = firstDelay + (i - 1) * stepDelayValue; // zapisywanie delaya dla loga
+    const currentDelay = firstDelayValue + (i - 1) * stepDelayValue; // zapisywanie delaya dla loga
     createPromise(i, currentDelay).then(() => {
       createdPromiseCount++; // zwiekszenie licznika wykonanych funkcji
 
